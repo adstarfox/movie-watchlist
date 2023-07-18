@@ -2,10 +2,10 @@ import { Fragment } from "react"
 import MovieCard from "./MovieCard"
 
 
-const MovieScreen = ({WatchList, Page, setPage, movieList}) => {
+const MovieScreen = ({WatchList, Page, setPage, movieList, addMovie}) => {
     const movieDisplay = movieList.map((movie, index) => {
         return (
-        <h2 key={index}>{<MovieCard movie={movie}/>}</h2>
+        <h2 key={index}>{<MovieCard movie={movie} addMovie={addMovie}/>}</h2>
         )
     })
 

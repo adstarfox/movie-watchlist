@@ -24,6 +24,10 @@ button {
   min-width: 125px;
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 .page {
   width: calc(100vw - 520px);
   display: flex;
