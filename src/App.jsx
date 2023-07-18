@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import axios from 'axios'
 import MovieScreen from './components/MovieScreen';
-// import './App.css'
+import './App.css'
 
 function App() {
   const [movieList, setMovieList] = useState([]);
