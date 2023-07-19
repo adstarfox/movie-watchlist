@@ -1,8 +1,8 @@
 import MovieCard from "./MovieCard"
 
-const Watchlist = ({WatchList}) => {
+const Watchlist = ({WatchList, removeMovie}) => {
     const movieDisplay = WatchList.map((movie, index) => {
-        return <MovieCard movie={movie} key={index}/>
+        return <MovieCard movie={movie} key={index} removeMovie={removeMovie} WatchList={WatchList}/>
     })
 
     return (
